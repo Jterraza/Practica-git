@@ -1,6 +1,6 @@
 // como crear variable en javascript//
 //es5
-var name = 'jay';
+var name = 'lord lupe';
 
 //es6
 
