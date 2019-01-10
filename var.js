@@ -6,3 +6,8 @@ var name = 'lord lupito';
 
 let age = 35;
 const birthday = '23/10/2000'
+
+console.log('Hello world' + name);
+
+console.log(`mi cumpleaños es: ${birthday}`);
+console.log(`y 5 + 10 es: ${5+10}`);
