@@ -1,35 +1,71 @@
-const numbers = [1,2,3,4,5,6,7,8,9];
-const names = ['jay','jose','lupito'];
+const numbers = [1,2,3,4,5,6,7];
+const names = ["Mario", "Yalu","Jerry"];
 
-for(let i=0; i< names.length; i++){
-	if(i==1){
-		break;
+//Iterations
+for(let i=0; i< numbers.length; i++){
+    console.log(i);
+    console.log(numbers[i]);
 
-	}
-	console.log(names [i]);
+}    
+
+
+//0 == '0' //true
+//0 ==='0' //false
+
+
+//FUNCTION VARIABLE DEFINITION//////////////////
+const myFunction = function(name){
+    console.log('oliiii' + name);
 }
-function logItems(items){
-	console.log(logItems);
 
+
+//UTILIZAR FOREACH//////////////////////////
+function logItems(itemActual, index){
+    console.log(`Name ${itemActual} at index: ${index}` )
 }
+
 names.forEach(logItems);
 
-/////////////////////////
-const myFunction=function(names){
-	console.log('olii'+names)
+//ARROY FUNCTION/////////////////////////
+const sum = (a,b) =>{
+    return a+b;
 }
 
-////////////////////////
-const sum =(a,b) =>{
-	const value = a+b;
-	return value;
+const resta = (a,b)  =>{
+    return a-b;
 }
-//////////////
 
-const fullNames =[];
-const resta = (a,b) => a-b;
-names.forEach(items=>console.log(items));
+const resta = (a,b)  => a - b;
 
-names.map(items=> fullNames.push(items+'rodriguez') )
-console.log(fullNames);
+//ARROY FUNCTION IMPLICIT RETURN///////////////////////////////////////
+names.forEach(logItems => console.log(item));
 
+
+//////////////////////////////
+const fullNames = [];
+const output = name.forEach(item => fullNames.push(item + 'Rodriguez'));
+
+const output2 = names.map(item => item + 'Rodriguez')
+console.log(output2);
+
+////////////////////////////////////////////////////////
+
+const dudes = [...names, ...numbers];
+
+
+/////////////////////////////////////////////////
+
+const mutant = {
+    name: 'Xavier',
+    power: 'Telep'
+}
+
+mutant.name = 'Mario';
+
+const mutant2 = mutant;
+//y luego cambio algo en el mutant2, se cambia en el 1
+
+const mutant3 = {...mutant, name: 'Javier'}
+//y así se hace magia y se crea uno nuevo que puedes modificar sin modificar al otro
+
+nada más cambia los comentarios
