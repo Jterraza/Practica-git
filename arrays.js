@@ -32,3 +32,4 @@ names.forEach(items=>console.log(items));
 
 names.map(items=> fullNames.push(items+'rodriguez') )
 console.log(fullNames);
+
